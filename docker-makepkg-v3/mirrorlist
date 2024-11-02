@@ -1,0 +1,3 @@
+Server = https://archlinux.cachyos.org/$repo/os/$arch
+Server = https://geo.mirror.pkgbuild.com/$repo/os/$arch
+Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
