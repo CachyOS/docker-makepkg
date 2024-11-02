@@ -26,7 +26,6 @@ RUN useradd -m notroot && \
 # Continue execution (and CMD) as notroot:
 USER notroot
 WORKDIR /home/notroot
-COPY privkey.asc /home/notroot/privkey.asc
 
 # Auto-fetch GPG keys (for checking signatures):
 # hadolint ignore=DL3003
