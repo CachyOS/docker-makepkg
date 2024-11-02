@@ -20,9 +20,12 @@ Depending, on which repository you want to build against, you choose simply betw
 Usage locally
 -------------
 
+## Build the image
 ```
 docker build -t cachyos/docker-makepkg:latest .
+```
 
+## Start to compile in the directory of the PKGBUILD
 ```
 time docker run --name dockerbuilder -e EXPORT_PKG=1 -e SYNC_DATABASE=1 -v $PWD:/pkg cachyos/docker-makepkg && docker rm dockerbuilder
 ```
